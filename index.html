@@ -12,13 +12,69 @@
         <script>
             let assert = chai.assert;
         </script>
-        </head>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
     <body>
-        <script src="js/index.js"></script>
-        <script src="js/test.js"></script>
-        <div id="mocha"></div>
-        <script>
-            mocha.run();
-        </script>
+        <header id="header">
+            <div class="logo-wrapper">
+              <img class="header-logo" id="header-img" alt="" src="https://i.imgur.com/O2wvSK9.png">
+            </div>
+            <nav class="header-nav" id="nav-bar">
+              <a href="#products" class="nav-link">Products</a>
+              <a href="#demo" class="nav-link">Demo</a>
+              <a href="#subscription" class="nav-link">Subscription</a>
+            </nav>
+          </header>
+          <main>
+            <div id="products" class="products-div">
+              <div id="intro-div">
+                <h2>Our products</h2>
+                <p>Over the last two years our company has developed several desktop applications for enterprises and personal use. This includes text editors, translation programs and spreadsheets.</p>
+              </div>
+              <div id="alpha-pad-div">
+                <div id="prod-description-alphapad">
+                  <img src="https://i.imgur.com/5hNKfoH.png" alt="AlphaPad logo" class="prod-logo">
+                  <p>Lightweight Windows desktop text editor with rich text editing and transliteration features.</p>
+                </div>
+                <img src="https://i.imgur.com/yaDR1vg.png" id="alpha-pad-screen">
+                <img src="https://i.imgur.com/lsPdf56.png" id="alpha-pad-screen-big">
+              </div>
+              <div id="csviewer-div">
+                <img src="https://i.imgur.com/wjXHunO.png" id="csviewer-screen">
+                <div id="prod-description-csviewer">
+                  <img src="https://i.imgur.com/wgQ73YJ.png" alt="CSViewer logo" class="prod-logo">
+                  <p>Windows desktop spreadsheet for .csv-files with data analysis capabilities.</p>
+                </div>
+                <img src="https://i.imgur.com/DjGTEH6.png" id="csviewer-screens">
+                <img src="https://i.imgur.com/0WyyzHr.png" id="csviewer-screen">
+              </div>
+              <div id="notepad-plus-div">
+                <img src="https://i.imgur.com/hnZYqZr.png" id="notepad-screen">
+                <div id="prod-description-notepad">
+                  <img src="https://i.imgur.com/aHWpnhZ.png" alt="Notepad+ logo" class="prod-logo">
+                  <p>Windows desktop text editor with C# IDE functionality and in-depth customization.</p>
+                </div>
+              </div>
+            </div>
+            <div id="demo">
+              <h2>Products demo</h2>
+              <iframe id="video" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="subscription" class="email-form-div">
+              <div class="form-wrapper">
+                <h2>Keep updated with our products</h2>
+                <form id="form" class="email-form" action="https://www.freecodecamp.com/email-submit">
+                  <input type="email" name="email" id="email" placeholder="Enter your E-Mail" required>
+                  <input type="submit" id="submit" class="submit-button" value="Submit">
+                </form>
+              </div>
+            </div>
+          </main>
+          <footer>
+            <span>Copyright 2021, Sφera (Sphera)</span>
+          </footer>
     </body>
 </html>

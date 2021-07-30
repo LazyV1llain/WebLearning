@@ -1,17 +1,15 @@
-class User {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+  };
 
-    getInfo(attr) {
-        switch(attr) {
-            case "name":
-                return this.name;
-            case "age":
-                return this.age;
-            default:
-                return "unknown attribute";
-        }
-    }
-}
+  function multiplyNumeric(obj) {
+      for (let prop in obj) {
+          if (typeof(obj[prop]) == "number") obj[prop] *= 2;
+      }
+  }
+
+  document.write(`${menu.width}, ${menu.height}, ${menu.title}` + "<br/>");
+  multiplyNumeric(menu);
+  document.write(`${menu.width}, ${menu.height}, ${menu.title}`);
