@@ -254,9 +254,6 @@ footer span {
 }
 
 @media (max-width: 700px) {
-  * {
-    font-size: 20px;
-  }
 
   #csviewer-screen {
     display: none;
@@ -281,7 +278,7 @@ footer span {
   header {
     flex-direction: column;
     justify-content: center;
-    height: 200px;
+    height: 25vh;
   }
 
   div.logo-wrapper {
@@ -302,7 +299,7 @@ footer span {
   }
 
   .products-div {
-    margin-top: 200px;
+    margin-top: 25vh;
   }
 
   #alpha-pad-screen {
@@ -348,9 +345,6 @@ footer span {
 }
 
 @media (min-width: 701px) {
-  * {
-    font-size: 16px;
-  }
 
   #csviewer-screen {
     display: default;
@@ -417,7 +411,7 @@ footer span {
   }
 
   #alpha-pad-div .prod-logo {
-    max-width: 45%;
+    max-width: 40%;
   }
 
   #prod-description-notepad {
@@ -425,13 +419,13 @@ footer span {
   }
 
   #prod-description-notepad p {
-    width: 65%;
+    width: 60%;
     text-align: left;
   }
 
   #notepad-plus-div .prod-logo {
     margin-bottom: 1rem;
-    width: 70%;
+    width: 60%;
   }
 
   #notepad-screen {
