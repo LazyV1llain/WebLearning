@@ -110,7 +110,6 @@ a.nav-link:hover {
 }
 
 #intro-div p {
-  width: 40%;
   text-align: center;
   margin: auto;
   line-height: 1.5rem;
@@ -254,6 +253,13 @@ footer span {
 }
 
 @media (max-width: 700px) {
+  * {
+    font-size: 14px;
+  }
+
+  #intro-div p {
+    width: 60%;
+  }
 
   #csviewer-screen {
     display: none;
@@ -278,7 +284,7 @@ footer span {
   header {
     flex-direction: column;
     justify-content: center;
-    height: 25vh;
+    height: 20vh;
   }
 
   div.logo-wrapper {
@@ -299,7 +305,7 @@ footer span {
   }
 
   .products-div {
-    margin-top: 25vh;
+    margin-top: 20vh;
   }
 
   #alpha-pad-screen {
@@ -345,6 +351,13 @@ footer span {
 }
 
 @media (min-width: 701px) {
+  * {
+    font-size: 16px;
+  }
+
+  #intro-div p {
+    width: 40%;
+  }
 
   #csviewer-screen {
     display: default;
